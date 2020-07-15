@@ -1,0 +1,39 @@
+Assignment 1
+
+Answer 1: Console function.
+Console.Log() - The console.log() method writes a message to the console.
+Example - console.log("Lets Upgrade");
+
+Console.Warn() - The console.warn() method writes a warning to the console.
+Example - console.warn("This is a warning!");
+
+Console.Error() - The console.error() method writes an error message to the console.
+Example - console.error("Error occured");
+
+Console.Table() - The console.table() method writes a table in the console view.
+Example - console.table(["Cycle", "Bus", "Car"]);
+
+Console.Time(), Console.TimeEnd() - This methods starts and ends the timer in the console view.
+console.time();
+for (i = 0; i < 10000; i++) {
+}
+console.timeEnd();
+
+
+Answer2 : vdifference between var let const.
+* var declarations are globally scoped or function scoped while let and const are block scoped.
+* var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.
+* They are all hoisted to the top of their scope. But while var variables are initialized with undefined, let and const variables are not initialized.
+*While var and let can be declared without being initialized, const must be initialized during declaration.
+
+Answer 3: Data types in JS
+JavaScript has dynamic types. The same variable can be used to hold different data types
+Example - 
+var x ; //undefined
+x = 25; //int
+x = "Apple" //string
+x = false //boolean
+var vehicles = ["car", "Bus", "Cycle"]; //Array
+var person = {firstName:"Ana", lastName:"peterson", age:50, eyeColor:"blue"}; //Object
+
+
