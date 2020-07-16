@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Remaining methods of string and Array
+
+        //string Methods
+        //1. Length
+        var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var sln = txt.length;
+        document.write(sln);
+
+        //2.indexOf()
+        var pos = txt.indexOf("Z");
+        document.write("</br>");
+        document.write(pos);
+
+        //3.search()
+        var pos = txt.search("Z");
+        document.write("</br>");
+        document.write(pos);
+
+        //4.slice()
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(7, 13);
+
+        //5. Substring()
+        var str = "Apple, Banana, Kiwi";
+        var res = str.substring(7, 13);
+
+        //6. replace()
+        str = "Hello All";
+        var n = str.replace("Hello", "Hi");
+
+        //7. toUpperCase(), toLowerCase()
+        var text1 = "Hello World!";      
+        var text2 = text1.toUpperCase();
+        var text3 = text1.toLowerCase();
+
+        //8. trim()
+        var str = "       Hello World!        ";
+        alert(str.trim());
+
+        //9. charAt()
+        var str = "HELLO WORLD";
+        str.charAt(0);    
+
+        //10. split()
+        var txt = "a,b,c,d,e";  
+        txt.split(","); 
+        
+
+
+        //Array Methods
+        //1. Join Method - joins the array with the provided string
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.write(fruits.join("-"));
+        document.write("</br>");
+
+        //2. Pop and Push - Inserts and removes the array element at the end
+        var vehicle = ["car", "bus","Cycle"];
+        document.write(vehicle);
+        document.write("</br>");
+        document.write(vehicle.push("Truck"));
+        document.write(vehicle.pop("bus"));
+        
+        //3. Unshift, shift - Insert and remove the array element at start
+        var vehicle1 = ["car", "bus","Cycle"];
+        document.write(vehicle1);
+        document.write("</br>");
+        document.write(vehicle1.unshift("Truck"));
+        document.write(vehicle1.shift("bus"));
+
+        //4.Delete element of array
+        var fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+        delete fruits1[0]; 
+
+        //5. Splicing the array
+        fruits1.splice(2, 0, "Lemon", "Kiwi");
+        document.write("</br>");
+        document.write(fruits1);
+
+        //6. Concat
+        var fruitscon = fruits.concat(fruits1);
+        document.write("</br>");
+        document.write(fruitscon);
+
+
+
+    </script>
+</body>
+</html>
