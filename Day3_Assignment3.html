@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Input marks from user and grade him.
+        // Method 1: - Conditional
+        let marks = prompt('Please enter your Marks !');
+        if(marks >= 70)
+        {
+            console.log("Marks are "+marks+ " grade is A");
+        }
+        else if(marks >=50)
+        {
+            console.log("Marks are "+marks+ " grade is B");
+        }
+        else if(marks >=35)
+        {
+            console.log("Marks are "+marks+ " grade is C");
+        }
+        else
+        {
+            console.log("Marks are "+marks+ " grade is F");
+        }
+
+        //Method 2: - switch or ternary
+
+        let num1 = marks;
+        var marks1 = num1 >=70 ? 'Marks are ' + num1 + ' grade is A ' : (num1 >=50 ? 'Marks are ' + num1 + ' grade is B' : (num1>=35 ? 'Marks are ' + num1 + ' grade is C' : "Marks are "+marks+ " grade is F") )
+        console.log(marks1);
+    </script>
+</body>
+</html>
