@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Prime numbers
+        let n = prompt("Enter value of n for diplaying prime nmbers: - ");
+        for(let i =2; i<=n; i++)
+        {
+            let a = false;
+            for(let j=2; j<i; j++)
+            {
+                if(i%j === 0)
+                a = true;
+                
+            }
+            if(a == false)
+            console.log(i);
+        }
+    </script>
+</body>
+</html>

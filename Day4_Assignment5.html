@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Logging the total commission earned by employees.
+        let salesrecord = prompt("Enter your sales made during the year: -");
+        let commission ;
+        if(salesrecord >=0 && salesrecord <=5000 )
+        {
+            var percent = (2 / 100) * salesrecord;
+            var com = +salesrecord+percent;
+            console.log("Your Commission is :",+ com);
+        }
+        else if(salesrecord >=5001 && salesrecord <=10000)
+        {
+            var percent = (5 / 100) * salesrecord;
+            var com = +salesrecord+percent;
+            console.log("Your Commission is :",+ com);
+        }
+        else if(salesrecord >=10001 && salesrecord <=20000)
+        {
+            var percent = (7 / 100) * salesrecord;
+            var com = +salesrecord+percent;
+            console.log("Your Commission is :",+ com);
+        }
+        else
+        {
+            var percent = (10 / 100) * salesrecord;
+            var com = +salesrecord+ percent;
+            console.log("Your Commission is :",+ com);
+        }
+    </script>
+</body>
+</html>
