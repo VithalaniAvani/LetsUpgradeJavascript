@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create a class
+        class User{
+            constructor(name,age,email){
+                this.name=name;
+                this.age=age;
+                this.email=email
+                this.courses = [];
+            }
+            login(){
+                console.log(`${this.name} has logged in`);
+                return this;
+            }
+            logout(){
+                console.log(`${this.name} has logged out`);
+                return this;
+            }
+        }
+
+        //class moderator
+        class Moderator extends User{
+            constructor(name,age,email,coins){
+                super(name,age,email)
+                this.coins=0;
+            }
+                addCoins(){
+                    this.coins++;
+                    console.log(`${this.coins} coins added`);
+                    return this;
+                }
+                removeCoins(){
+                    this.coins--;
+                    console.log(`${this.coins} coins removed`);
+                    return this;
+                }
+        }
+
+        //class Admin
+        class Admin extends Moderator{
+            addCourse(user,course)
+                {
+                user.courses.push(course);
+                console.log(user);
+            }
+            deleteCourse(user,course)
+                {
+                user.courses.pop(course);
+                console.log(user);
+            }
+            }
+
+        let user1 = new User('Amy',30,'amy@gmail.com');
+        let user2 = new User("Sheldon",31,"s@gmail.com")
+        user1.login().logout();
+        user2.login().logout();
+        let mod = new Moderator('Penny',27,'p@gmail.com',55);
+        mod.login().addCoins().logout();
+        let mod1 = new Moderator('Bert',27,'b@gmail.com',1);
+        mod1.login().removeCoins().logout();
+        let adm = new Admin('Rajesh',22,'ra2gmail',2)
+        adm.login();
+        adm.addCourse(user1,'Cinnamon');
+        adm.addCourse(user1,'Cin');
+        adm.deleteCourse(user1,'cin')
+    </script>
+</body>
+</html>

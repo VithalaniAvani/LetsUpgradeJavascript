@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q1 - Higher order functions
+
+        let arr = prompt("Enter numbers to display odd numbers and cubes");
+        let arr1 = arr.split(" ");
+        console.log(arr1);
+        let odd = arr1.filter(el => el%2==1);
+        console.log("The Odd numbers are : " +odd);
+        let cubes = odd.map(el => el*el*el);
+        console.log("The Cubes of filtered numbers is "+cubes)
+    </script>
+</body>
+</html>
