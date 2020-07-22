@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Loop through the array to change bg color
+        let array = ['yellow','aqua','black'];
+         let count = 0;   
+         function color(){
+                 document.body.style.backgroundColor= array[count++];
+         }
+         setInterval(color,5000)
+    </script>
+</body>
+</html>
