@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+    <h4 id="name">
+        
+    </h4>
+</p>
+    <h4 id="time"></h4>
+   <p> <button id=btn>
+        Switch to drak mode
+    </button></p>
+    <script>
+        // clock
+        const ctime = document.getElementById('time');
+        function clock(){
+        let date = new Date();
+        let time = date.toLocaleTimeString();
+        ctime.innerText = time;
+        }
+        setInterval(clock,1000);
+        // print name
+        let name = prompt("Please enter your name");
+        document.write(`Welcome ${name}`)
+        //darkmode
+        const dmode = document.getElementById('btn');
+        dmode.onclick = function changeColor(){
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+        //document.body.style.fontFamily = 'Helvetica';
+   
+}
+    </script>
+</body>
+</html>
