@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2>
+        Random Quote Generator
+    </h2>
+    <button id="btn" onclick="quotegenerator();">
+        Generate Quote Randomly 
+    </button>
+</br>
+</br>
+<div style="border: 1px solid gray; font-style: italic; font-size: 25px; background-color: sandybrown;" id="txt1"></div>
+    <!-- <input type="text" id="txt1"> -->
+</head>
+<body>
+    <script>
+        function quotegenerator(){
+            let quotes = ['Hope never dies','A friend in need is a friend indeed !!','You must be the change you wish to see in the world','Future depends on what you do today','Nobody can hurt me without my permission','FREEDOM - Well understood when you dont have it ','Do right even when nody is watching','Do not stop until you are proud','There is no place like home.','Everything you can imagine is Real.'];
+            let randomnumber = Math.floor(Math.random()*10);
+            let text = quotes[randomnumber];
+            document.getElementById('txt1').innerHTML = text;
+            //console.log(randomnumber)
+            console.log(text);
+            
+        }
+    </script>
+</body>
+</html>
